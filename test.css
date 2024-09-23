@@ -18,7 +18,7 @@
     transition: .3s;
     position: relative;
 }
-._a a:after {
+._a a::after {
     content: "";
     position: absolute;
     right: -5px;
@@ -31,4 +31,9 @@
 ._a a:hover {
     color: #ffffff;
     background-position: -100% 0;
+    transform: translate(5px, 5px);
+}
+
+._a a::after:hover {
+    transform: translate(-5px, -5px);
 }
